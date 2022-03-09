@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styling/reset.css">
+  <link rel="stylesheet" href="./styling/main.css">
+  <script defer src="./scripts/main.js"></script>
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+
+<body>
+  <main class="card-wrapper">
+    <h1 class="sr-only">Interactive pricing component</h1>
+
+    <header class="pricing-card-header">
+      <h2>Simple, traffic-based pricing</h2>
+      <p>Sign-up for our 30-day trial.
+        No credit card required. </p>
+    </header>
+
+    <form class="pricing-card" action="">
+
+      <span class="pricing-card__views"></span>
+
+      <input class="pricing-card__views-range" type="range" name="range" id="range" min="1" max="5" value="1" step="1">
+
+      <div class="pricing-card__price-container">
+        <span class="pricing-card__price"></span>
+        <span class="pricing-card__billing-frequency">/ month</span>
+      </div>
+
+
+      <label class="pricing-card__billing-frequency-toggle" for="billing-freq">
+        <span class="pricing-card__freq-option pricing-card__freq-option--monthly">Monthly Billing</span>
+
+        <input type="checkbox" name="billing-freq" id="billing-freq">
+
+        <div class="toggle">
+          <span class="toggle-circle"></span>
+        </div>
+
+        <span class="pricing-card__freq-option pricing-card__freq-option--annual">
+          Yearly Billing
+        </span>
+      </label>
+
+      <div class="price-card__bottom">
+        <div class="pricing-card__features">
+          <span class="pricing-card__feature">
+            <img src="./images/icon-check.svg" alt="">
+            <span>Unlimited websites</span>
+          </span>
+          <span class="pricing-card__feature">
+            <img src="./images/icon-check.svg" alt="">
+            <span>100% data ownership</span>
+          </span>
+          <span class="pricing-card__feature">
+            <img src="./images/icon-check.svg" alt="">
+            <span>Email reports</span>
+          </span>
+        </div>
+  
+        <button  class="pricing-card__submit-btn">
+          Start my trial
+        </button>
+      </div>
+
+
+    </form>
+
+  </main>
+</body>
+
+</html>
